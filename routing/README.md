@@ -107,3 +107,13 @@ Example: Create a dashboard folder and LineChart.tsx. Now if you want to access 
 -> Files are not necessarily put into app folder and can also be outside app folder and separate components folder for all UI components
 
 Private folders:
+-> We can also tell Next.js to exclude a folder from routing system.
+-> The folder and all the subfolders can be excluded.
+-> To make this possible you can just add \_ before the file name.
+-> Private folders are useful for:
+-> Keeping UI logic separate from routing logic
+-> Consistent way to organize internal files in project.
+-> Avoiding potential name conflicts.
+-> If you want to use \_ in the url then you can use "%5F" for thr folder name
+
+Route groups:
