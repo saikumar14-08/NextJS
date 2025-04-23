@@ -86,3 +86,11 @@ Dynamic routes:
 
 Nested Dynamic Routes:
 -> Just like nested routes with dynamic features.
+
+Catch-all segments:
+-> Dynamic Segments can be extended to catch-all subsequent segments by adding an ellipsis inside the brackets [...segmentName].
+-> For example, docs/[...slug]/page.tsx will match /docs/reviews, but also /docs/reviews/1, /docs/reviews/one/1/t-shirts, and so on.
+
+Optional Catch-all segments:
+-> Catch-all Segments can be made optional by including the parameter in double square brackets: [[...segmentName]].
+-> The difference between catch-all and optional catch-all segments is that with optional, the route without the parameter is also matched.(/docs)
