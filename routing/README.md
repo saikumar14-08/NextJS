@@ -74,3 +74,6 @@ Creating routes:
 -> If you remove extensions and themes you might still see the error because of the build. So delete .next folder.
 -> Routes are directly typed to their folder names in the directory.
 Nested routes:
+-> Just create a folder in your app folder. Ex: blog
+-> In blog folder create a folder called as first and create page.tsx in that folder.
+-> Now your route will be /blog/first
