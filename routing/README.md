@@ -57,3 +57,20 @@ A. RSC is a new architecture introduced by react and adopted by nextJS.
    Client components: To create a Client component, you'll need to add the "use client" directive at the top of your component file.
    -> Client components can't perform server-side tasks(reading files), but they can use hooks and handle user interactions.
    -> Client components are traditional react components.
+
+Routing:
+-> Next.js has a file-system based routing system that means your file structure determines your routes.
+Routing conventions or rules:
+-> All routed must be inside the app folder.
+-> Route files must be named either page.js or page.tsx
+-> Each folder represents a segment of url path.
+If you all the above, the file automatically will be available as a route.
+Creating routes:
+-> In src folder, create an app folder which is the entry folder to our routing.
+-> In app folder, create page.tsx which is the home route.
+-> To create a route, create a folder->page.tsx. Ex: Create about folder in app folder and add page.tsx file.
+-> Make sure your components are defualt exports. named exports creates errors.
+-> You might also face an hydration issue. This can be caused by our browser extensions, theme changes etc., try to test in incognito and this doesn't matter in production but safe to check production build.
+-> If you remove extensions and themes you might still see the error because of the build. So delete .next folder.
+-> Routes are directly typed to their folder names in the directory.
+Nested routes:
