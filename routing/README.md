@@ -94,3 +94,7 @@ Catch-all segments:
 Optional Catch-all segments:
 -> Catch-all Segments can be made optional by including the parameter in double square brackets: [[...segmentName]].
 -> The difference between catch-all and optional catch-all segments is that with optional, the route without the parameter is also matched.(/docs)
+
+Not Found pages:
+-> To implement your own not found page, you just need to create a not-found.jsx or not-found.tsx file.
+-> You can also show different not found pages for different routes. You just need to create not-found file in that particular route and then simply call noFound() imported from next/navigation
