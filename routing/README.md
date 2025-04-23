@@ -65,6 +65,7 @@ Routing conventions or rules:
 -> Route files must be named either page.js or page.tsx
 -> Each folder represents a segment of url path.
 If you all the above, the file automatically will be available as a route.
+
 Creating routes:
 -> In src folder, create an app folder which is the entry folder to our routing.
 -> In app folder, create page.tsx which is the home route.
@@ -73,7 +74,15 @@ Creating routes:
 -> You might also face an hydration issue. This can be caused by our browser extensions, theme changes etc., try to test in incognito and this doesn't matter in production but safe to check production build.
 -> If you remove extensions and themes you might still see the error because of the build. So delete .next folder.
 -> Routes are directly typed to their folder names in the directory.
+
 Nested routes:
 -> Just create a folder in your app folder. Ex: blog
 -> In blog folder create a folder called as first and create page.tsx in that folder.
 -> Now your route will be /blog/first
+
+Dynamic routes:
+-> To dynamic routes you have to create a folder name inside [] which tells next that it is a dynamic router.
+->
+
+Nested Dynamic Routes:
+-> Just like nested routes with dynamic features.
