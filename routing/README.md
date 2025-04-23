@@ -98,3 +98,12 @@ Optional Catch-all segments:
 Not Found pages:
 -> To implement your own not found page, you just need to create a not-found.jsx or not-found.tsx file.
 -> You can also show different not found pages for different routes. You just need to create not-found file in that particular route and then simply call noFound() imported from next/navigation
+
+File Colocation:
+-> Route becomes publicly accesible only when you create a page.tsx file in it.
+-> So only default export components are used as routes which explains us not every file can be used as a route.
+-> You can import the components in page.tsx and display them.
+Example: Create a dashboard folder and LineChart.tsx. Now if you want to access LineCHart.tsx you get not found page. But you can create a page.tsx file with default export component in it and use linechart in it.
+-> Files are not necessarily put into app folder and can also be outside app folder and separate components folder for all UI components
+
+Private folders:
