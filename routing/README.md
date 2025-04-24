@@ -121,3 +121,13 @@ Route groups:
 -> Authentication routes: register, login, forgot-password
 -> To group all of them create a auth folder and create register folder, login folder, forgot-password folder and page.tsx in those folders.
 -> But to access login page, you've to use /auth/login. To avoid that you wrap name of auth folder in () like (auth)
+
+Layouts:
+-> Pages are route specific UI components
+-> A layout is UI that is shared between multiple pages in our app.(Ex: Header and footer which are same)
+-> layout.tsx is a mandatory file and it generates automatically even if you delete it.
+-> layout.tsx is common file and all the components loads into them using children props.
+
+Nested layouts:
+-> You can implement the nested routes just by creating a layout.tsx in the route folder. Make sure you spell the folder name correctly like layout.tsx.
+-> And also make sure in nested layouts you use only react commponents or <div>, <section>, <main>, etc. — no document-level HTML tags like <html>, <head>, or <body>.
