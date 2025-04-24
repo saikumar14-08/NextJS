@@ -117,3 +117,7 @@ Private folders:
 -> If you want to use \_ in the url then you can use "%5F" for thr folder name
 
 Route groups:
+-> Lets logically organize our routes and project files without impacting URL structure.
+-> Authentication routes: register, login, forgot-password
+-> To group all of them create a auth folder and create register folder, login folder, forgot-password folder and page.tsx in those folders.
+-> But to access login page, you've to use /auth/login. To avoid that you wrap name of auth folder in () like (auth)
