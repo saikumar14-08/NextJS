@@ -131,3 +131,7 @@ Layouts:
 Nested layouts:
 -> You can implement the nested routes just by creating a layout.tsx in the route folder. Make sure you spell the folder name correctly like layout.tsx.
 -> And also make sure in nested layouts you use only react commponents or <div>, <section>, <main>, etc. — no document-level HTML tags like <html>, <head>, or <body>.
+
+Multiple root layouts:
+
+https://youtu.be/k7o9R6eaSes?t=3627
